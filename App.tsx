@@ -1,21 +1,64 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import React from "react";
+import Home from "./screens/Home";
+import Menu from "./screens/Menu";
+import Groups from "./screens/Groups";
 import "react-native-gesture-handler";
+import Profile from "./screens/Profile";
+import Friends from "./screens/Friends";
+import Header from "./components/Header";
+import Notification from "./screens/Notification";
+import { StatusBar, ScrollView } from "react-native";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { NavigationContainer } from "@react-navigation/native";
+import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 
-export default function App() {
-    return (
-        <View style={styles.container}>
-            <Text>Open up App.tsx to start working on your app!</Text>
-            <StatusBar style="auto" />
-        </View>
-    );
-}
+const Tab = createMaterialTopTabNavigator();
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: "#fff",
-        alignItems: "center",
-        justifyContent: "center",
-    },
-});
+const App = () => {
+  return (
+    <>
+      <StatusBar backgroundColor="#ffffffff" barStyle="dark-content" />;
+      <Header />
+      <NavigationContainer>
+        <Tab.Navigator
+          swipeEnabled="true"
+          tabBarOptions={{
+            showIcon: true,
+            showLabel: true,
+            activeTintColor: "#3a86e9",
+            inactiveTintColor: "#9F9F9F",
+          }}
+          screenOptions={({ route }) => ({
+            tabBarIcon: ({ focused, color, size }) => {
+              let iconName;
+              if (route.name === "Home") iconName = "home";
+              else if (route.name === "Friends")
+                iconName = "account-multiple-outline";
+              else if (route.name === "Groups") iconName = "account-group";
+              else if (route.name === "Profile")
+                iconName = "account-circle-outline";
+              else if (route.name === "Notification") iconName = "bell-outline";
+              else if (route.name === "Menu") iconName = "menu";
+              return (
+                <MaterialCommunityIcons
+                  name={iconName}
+                  size={26}
+                  color={color}
+                />
+              );
+            },
+          })}
+        >
+          <Tab.Screen name="Home" component={Home} />
+          <Tab.Screen name="Friends" component={Friends} />
+          <Tab.Screen name="Groups" component={Groups} />
+          <Tab.Screen name="Profile" component={Profile} />
+          <Tab.Screen name="Notification" component={Notification} />
+          <Tab.Screen name="Menu" component={Menu} />
+        </Tab.Navigator>
+      </NavigationContainer>
+    </>
+  );
+};
+
+export default App;
