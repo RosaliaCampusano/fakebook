@@ -5,7 +5,7 @@ interface Users {
   cheked: boolean;
 }
 
-const fakeStorys: Users[] = [
+const fakeStories: Users[] = [
   {
     source: require("../assets/story5.jpg"),
     user: require("../assets/28.jpg"),
@@ -32,4 +32,4 @@ const fakeStorys: Users[] = [
   },
 ];
 
-export default fakeStorys;
+export default fakeStories;
