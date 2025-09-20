@@ -21,16 +21,9 @@ const App = () => {
       <Header />
       <NavigationContainer>
         <Tab.Navigator
-          swipeEnabled="true"
-          tabBarOptions={{
-            showIcon: true,
-            showLabel: true,
-            activeTintColor: "#3a86e9",
-            inactiveTintColor: "#9F9F9F",
-          }}
           screenOptions={({ route }) => ({
-            tabBarIcon: ({ focused, color, size }) => {
-              let iconName;
+            tabBarIcon: ({ color }) => {
+              let iconName: String = "";
               if (route.name === "Home") iconName = "home";
               else if (route.name === "Friends")
                 iconName = "account-multiple-outline";
@@ -46,6 +39,12 @@ const App = () => {
                   color={color}
                 />
               );
+            },
+            tabBarActiveTintColor: "#3a86e9",
+            tabBarInactiveTintColor: "#9F9F9F",
+            tabBarShowLabel: true,
+            tabBarStyle: {
+              backgroundColor: "#ffffffff",
             },
           })}
         >
