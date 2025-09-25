@@ -3,9 +3,9 @@ import styled from "styled-components/native";
 
 interface AvatarProps {
   source: string | any;
-  onLine: boolean;
-  story: boolean;
-  cheked: boolean;
+  onLine?: boolean;
+  story?: boolean;
+  checked?: boolean;
 }
 
 interface ProfileImageProps {
@@ -38,10 +38,10 @@ const UserActive = styled.View`
   border: 2px solid #ffff;
 `;
 
-const Avatar: React.FC<AvatarProps> = ({ source, onLine, story, cheked }) => {
+const Avatar: React.FC<AvatarProps> = ({ source, onLine, story, checked }) => {
   return (
     <Container>
-      <ProfileImage source={source} story={story} cheked={cheked} />
+      <ProfileImage source={source} story={story} cheked={checked} />
       {onLine && <UserActive />}
     </Container>
   );
