@@ -7,7 +7,7 @@ import Profile from "./screens/Profile";
 import Friends from "./screens/Friends";
 import Header from "./components/Header";
 import Notification from "./screens/Notification";
-import { StatusBar, ScrollView } from "react-native";
+import { StatusBar } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { NavigationContainer } from "@react-navigation/native";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
@@ -42,7 +42,7 @@ const App = () => {
             },
             tabBarActiveTintColor: "#3a86e9",
             tabBarInactiveTintColor: "#9F9F9F",
-            tabBarShowLabel: true,
+            tabBarShowLabel: false,
             tabBarStyle: {
               backgroundColor: "#ffffffff",
             },
