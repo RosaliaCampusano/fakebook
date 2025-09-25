@@ -6,6 +6,7 @@ import Avatar from "./Avatar";
 const Container = styled.View`
   width: 100%;
   height: 92px;
+  margin-block-end: 12px;
 `;
 
 const Row = styled.View`
@@ -55,12 +56,7 @@ const ToolBar = () => {
   return (
     <Container>
       <Row>
-        <Avatar
-          source={require("../assets/0.jpg")}
-          onLine={true}
-          story={false}
-          cheked={false}
-        />
+        <Avatar source={require("../assets/0.jpg")} />
         <Input placeholder="¿Que estas pensando?" />
       </Row>
       <Divider />

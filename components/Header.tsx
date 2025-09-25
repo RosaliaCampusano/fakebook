@@ -1,9 +1,10 @@
 import React from "react";
+import { StatusBar } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import styled from "styled-components/native";
 
 const Container = styled.View`
-  margin-top: 45px;
+  margin-block-start: ${StatusBar.currentHeight}px;
   width: 100%;
   height: 58px;
   padding: 0 11px;

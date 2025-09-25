@@ -49,12 +49,7 @@ const Users = () => {
         {fakeUsers.map((elem, i) => {
           return (
             <User key={i.toString()}>
-              <Avatar
-                source={elem.source}
-                onLine={elem.online}
-                story={false}
-                cheked={false}
-              />
+              <Avatar source={elem.source} onLine={elem.online} />
             </User>
           );
         })}
