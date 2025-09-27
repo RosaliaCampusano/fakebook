@@ -161,7 +161,7 @@ const Post = () => {
                       color="#424040"
                     />
                   </Icon>
-                  <Text>Me gussta</Text>
+                  <Text>Me gusta</Text>
                 </Button>
                 <Button>
                   <Icon>
