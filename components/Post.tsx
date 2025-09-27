@@ -161,7 +161,7 @@ const Post = () => {
                       color="#424040"
                     />
                   </Icon>
-                  <Text>Me gusta</Text>
+                  <Text>Like</Text>
                 </Button>
                 <Button>
                   <Icon>
@@ -171,7 +171,7 @@ const Post = () => {
                       color="#424040"
                     />
                   </Icon>
-                  <Text>Comentar</Text>
+                  <Text>Comment</Text>
                 </Button>
                 <Button>
                   <Icon>
@@ -181,7 +181,7 @@ const Post = () => {
                       color="#424040"
                     />
                   </Icon>
-                  <Text>Compartir</Text>
+                  <Text>Share</Text>
                 </Button>
               </FooterMenu>
             </Footer>
