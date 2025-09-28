@@ -19,7 +19,7 @@ const fakeUsers: User[] = [
     postContent: `Vivamus leo elit, malesuada ac arcu non, dapibus lobortis sapien. Etiam in fringilla nunc. 
 Sed interdum quam sed ex fringilla, lobortis rutrum urna dapibus...`,
     likes: "23",
-    comments: "27 comentarios",
+    comments: "27 comments",
   },
   {
     source: require("../assets/88.jpg"),
@@ -30,7 +30,7 @@ Sed interdum quam sed ex fringilla, lobortis rutrum urna dapibus...`,
     postContent: `Vivamus leo elit, malesuada ac arcu non, dapibus lobortis sapien. Etiam in fringilla nunc. 
 Sed interdum quam sed ex fringilla, lobortis rutrum urna dapibus...`,
     likes: "168",
-    comments: "29 comentarios",
+    comments: "29 comments",
   },
   {
     source: require("../assets/12.jpg"),
@@ -41,7 +41,7 @@ Sed interdum quam sed ex fringilla, lobortis rutrum urna dapibus...`,
     postContent: `Vivamus leo elit, malesuada ac arcu non, dapibus lobortis sapien. Etiam in fringilla nunc. 
 Sed interdum quam sed ex fringilla, lobortis rutrum urna dapibus...`,
     likes: "2k",
-    comments: "27 comentarios",
+    comments: "27 comments",
   },
   {
     source: require("../assets/28.jpg"),
@@ -52,7 +52,7 @@ Sed interdum quam sed ex fringilla, lobortis rutrum urna dapibus...`,
     postContent: `Vivamus leo elit, malesuada ac arcu non, dapibus lobortis sapien. Etiam in fringilla nunc. 
 Sed interdum quam sed ex fringilla, lobortis rutrum urna dapibus...`,
     likes: "168",
-    comments: "678 comentarios",
+    comments: "678 comments",
   },
   {
     source: require("../assets/39.jpg"),
@@ -63,7 +63,7 @@ Sed interdum quam sed ex fringilla, lobortis rutrum urna dapibus...`,
     postContent: `Vivamus leo elit, malesuada ac arcu non, dapibus lobortis sapien. Etiam in fringilla nunc. 
 Sed interdum quam sed ex fringilla, lobortis rutrum urna dapibus...`,
     likes: "3k",
-    comments: "4k comentarios",
+    comments: "4k comments",
   },
   {
     source: require("../assets/8.jpg"),
@@ -74,7 +74,7 @@ Sed interdum quam sed ex fringilla, lobortis rutrum urna dapibus...`,
     postContent: `Vivamus leo elit, malesuada ac arcu non, dapibus lobortis sapien. Etiam in fringilla nunc. 
 Sed interdum quam sed ex fringilla, lobortis rutrum urna dapibus...`,
     likes: "3",
-    comments: "12 comentarios",
+    comments: "12 comments",
   },
   {
     source: require("../assets/40.jpg"),
@@ -85,7 +85,7 @@ Sed interdum quam sed ex fringilla, lobortis rutrum urna dapibus...`,
     postContent: `Vivamus leo elit, malesuada ac arcu non, dapibus lobortis sapien. Etiam in fringilla nunc. 
 Sed interdum quam sed ex fringilla, lobortis rutrum urna dapibus...`,
     likes: "254",
-    comments: "132 comentarios",
+    comments: "132 comments",
   },
   {
     source: require("../assets/42.jpg"),
@@ -96,7 +96,7 @@ Sed interdum quam sed ex fringilla, lobortis rutrum urna dapibus...`,
     postContent: `Vivamus leo elit, malesuada ac arcu non, dapibus lobortis sapien. Etiam in fringilla nunc. 
 Sed interdum quam sed ex fringilla, lobortis rutrum urna dapibus...`,
     likes: "666",
-    comments: "178 comentarios",
+    comments: "178 comments",
   },
   {
     source: require("../assets/1.jpg"),
@@ -107,7 +107,7 @@ Sed interdum quam sed ex fringilla, lobortis rutrum urna dapibus...`,
     postContent: `Vivamus leo elit, malesuada ac arcu non, dapibus lobortis sapien. Etiam in fringilla nunc. 
 Sed interdum quam sed ex fringilla, lobortis rutrum urna dapibus...`,
     likes: "345",
-    comments: "227 comentarios",
+    comments: "227 comments",
   },
   {
     source: require("../assets/68.jpg"),
@@ -118,7 +118,7 @@ Sed interdum quam sed ex fringilla, lobortis rutrum urna dapibus...`,
     postContent: `Vivamus leo elit, malesuada ac arcu non, dapibus lobortis sapien. Etiam in fringilla nunc. 
 Sed interdum quam sed ex fringilla, lobortis rutrum urna dapibus...`,
     likes: "6k",
-    comments: "2327 comentarios",
+    comments: "2327 comments",
   },
 ];
 

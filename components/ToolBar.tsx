@@ -57,7 +57,7 @@ const ToolBar = () => {
     <Container>
       <Row>
         <Avatar source={require("../assets/0.jpg")} />
-        <Input placeholder="¿Que estas pensando?" />
+        <Input placeholder="What are you thinking?" />
       </Row>
       <Divider />
       <Row>
